@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PixelRise Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gray-900 text-white">
+
+  <!-- Header -->
+  <header class="bg-black shadow-md fixed w-full top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
+
+      <!-- Logo -->
+      <a href="#" class="flex items-center space-x-2">
+        <img src="images/logo.png" alt="Logo" class="h-12">
+        <span class="text-xl font-bold">Pixel<span class="text-blue-600">Rise</span></span>
+      </a>
+
+      <!-- Navigation (Desktop) -->
+      <nav class="hidden md:flex space-x-8">
+        <a href="#" class="hover:text-sky-400 transition">Home</a>
+        <a href="#about" class="hover:text-sky-400 transition">About</a>
+        <a href="#service" class="hover:text-sky-400 transition">Services</a>
+        
+        <a href="#contact" class="hover:text-sky-400 transition">Contact Us</a>
+      </nav>
+
+      <!-- CTA Button -->
+      <a href="#contact" 
+        class="hidden md:flex bg-blue-400 hover:bg-blue-500 text-black font-semibold px-5 py-2 rounded transition items-center gap-2">
+        Let’s Talk 
+        <span>↑</span>
+      </a>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+        ☰
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-black px-6 py-4 space-y-3">
+      <a href="#" class="block hover:text-sky-400">Home</a>
+      <a href="#about" class="block hover:text-sky-400">About</a>
+      <a href="#service" class="block hover:text-sky-400">Services</a>
+      <a href="#contact" class="block hover:text-sky-400">Contact Us</a>
+      <a href="#contact" 
+        class="block w-full text-center bg-blue-400 hover:bg-blue-500 text-black font-semibold px-5 py-2 rounded transition">
+        Let’s Talk ↑
+      </a>
+    </div>
+  </header>
+<!-- Banner Section -->
+<section class="relative h-screen flex items-center justify-center bg-cover bg-center pt-16" 
+         style="background-image: url('images/B1.jpg');">
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+
+  <div class="relative z-10 flex flex-col lg:flex-row items-center justify-between w-11/12 max-w-7xl mx-auto gap-10">
+
+    <!-- Left Text -->
+    <div class="lg:w-1/2 text-center lg:text-left space-y-6">
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+        Digital <span class="text-blue-400">Marketing</span>
+      </h1>
+      <p class="text-lg text-gray-300 max-w-lg mx-auto lg:mx-0">
+        Powering your success with data-driven strategies. Unlock growth, maximize visibility, 
+        and scale your business with PixelRise.
+      </p>
+    </div>
+
+    <!-- Right Form (Hidden on Mobile / Tablet, Visible on Desktop) -->
+    <div id="contact"class="lg:w-1/2 w-full bg-gray-800 bg-opacity-90 p-8 rounded-2xl shadow-xl border border-blue-500 hidden lg:block">
+      <form class="space-y-4">
+        <input type="text" placeholder="Name*" class="w-full px-4 py-3 rounded-lg bg-gray-900 text-white border border-gray-600 focus:border-blue-400 outline-none">
+        <input type="text" placeholder="Phone No*" class="w-full px-4 py-3 rounded-lg bg-gray-900 text-white border border-gray-600 focus:border-blue-400 outline-none">
+        <input type="email" placeholder="Email*" class="w-full px-4 py-3 rounded-lg bg-gray-900 text-white border border-gray-600 focus:border-blue-400 outline-none">
+        <input type="text" placeholder="Business Type*" class="w-full px-4 py-3 rounded-lg bg-gray-900 text-white border border-gray-600 focus:border-blue-400 outline-none">
+        <textarea placeholder="Message*" rows="3" class="w-full px-4 py-3 rounded-lg bg-gray-900 text-white border border-gray-600 focus:border-blue-400 outline-none"></textarea>
+        <button class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 rounded-lg transition duration-300">
+          Connect with PixelRise Today
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section id="service" class="bg-[#0e1012] py-20 px-6">
+  <div class="max-w-6xl mx-auto text-center">
+    <!-- Section Heading -->
+    <p class="text-sky-400 font-medium mb-2">— All Services</p>
+    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Our Services</h2>
+    <p class="text-gray-400 max-w-2xl mx-auto mb-12">
+      Comprehensive Website Services to Ignite Your Online Success. Empower 
+      Your Business with Powerful Online Services from our Website.
+    </p>
+
+    <!-- Service Cards -->
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      
+      <!-- Card 1 -->
+      <div class="bg-white rounded-xl shadow-lg p-6">
+        <h3 class="text-lg font-bold text-gray-900">Website Development</h3>
+        <img src="images/website.jpg" alt="Website Development" class="mt-4 rounded-lg"/>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-xl shadow-lg p-6">
+        <h3 class="text-lg font-bold text-gray-900">App Development</h3>
+        <img src="images/App.jpg" alt="App Development" class="mt-4 rounded-lg"/>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-xl shadow-lg p-6">
+        <h3 class="text-lg font-bold text-gray-900">Digital Marketing</h3>
+        <img src="images/DG.jpg" alt="Digital Marketing" class="mt-4 rounded-lg"/>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-white rounded-xl shadow-lg p-6">
+        <h3 class="text-lg font-bold text-gray-900">Website Maintenance</h3>
+        <img src="images/DA.jpg" alt="Website Maintenance" class="mt-4 rounded-lg"/>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Script for Mobile Menu -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+<section class="bg-[#0d1117] py-16 px-6">
+  <div class="max-w-6xl mx-auto text-center">
+    <!-- Section Title -->
+    <h2 class="text-2xl sm:text-3xl font-bold text-sky-400 mb-12 relative inline-block">
+      <span class="relative z-10">How We Work</span>
+    </h2>
+
+    <!-- Steps -->
+    <div class="grid md:grid-cols-3 gap-6">
+      
+      <!-- Step 1 -->
+      <div class="bg-[#111827] p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+        <p class="text-[#2563eb] font-semibold">Step 01</p>
+        <h3 class="text-xl font-bold text-white mb-4">Website Review</h3>
+        <div class="border-b border-gray-700 mb-4"></div>
+        <p class="text-gray-400">
+          We carefully review your website with the right tools to prepare for improvements.
+        </p>
+      </div>
+
+      <!-- Step 2 (Highlighted) -->
+      <div class="bg-[#2563eb] p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+        <p class="text-white font-semibold">Step 02</p>
+        <h3 class="text-xl font-bold text-white mb-4">Smart Optimization</h3>
+        <div class="border-b border-white mb-4"></div>
+        <p class="text-white">
+          We optimize your website with tailored strategies that cover every need.
+        </p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="bg-[#111827] p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+        <p class="text-[#2563eb] font-semibold">Step 03</p>
+        <h3 class="text-xl font-bold text-white mb-4">Growth Analysis</h3>
+        <div class="border-b border-gray-700 mb-4"></div>
+        <p class="text-gray-400">
+          We analyze performance data and design strategies to ensure continuous growth.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- About Us Section -->
+<section id="about" class="bg-[#0e1012] py-20 px-6">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    
+    <!-- Left Side - Image -->
+    <div>
+      <img src="images/office.jpg" alt="About Us" class="rounded-2xl shadow-lg">
+    </div>
+    
+    <!-- Right Side - Content -->
+    <div class="text-white">
+      <p class="text-sky-400 font-medium mb-2">— About Us</p>
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Who We Are</h2>
+      <p class="text-gray-400 mb-6">
+        We are a passionate team dedicated to building modern, scalable, and innovative 
+        digital solutions. Our goal is to empower businesses with websites, apps, and 
+        marketing strategies that deliver measurable results.
+      </p>
+      <p class="text-gray-400 mb-6">
+        With expertise across multiple domains, we combine creativity with technology to 
+        craft impactful online experiences that help brands grow and thrive in today’s 
+        digital-first world.
+      </p>
+
+      <!-- Highlight points -->
+      <ul class="space-y-3 text-gray-300">
+        <li class="flex items-center"><span class="text-sky-400 mr-2">✔</span> Custom Web & App Development</li>
+        <li class="flex items-center"><span class="text-sky-400 mr-2">✔</span> Scalable Digital Marketing Strategies</li>
+        <li class="flex items-center"><span class="text-sky-400 mr-2">✔</span> Dedicated Ongoing Support</li>
+      </ul>
+
+      <!-- Button -->
+      <div class="mt-8">
+        <a href="#service" class="bg-sky-500 hover:bg-sky-600 text-white px-6 py-3 rounded-lg shadow-md transition">
+          Explore Our Services
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="bg-gray-900 text-white py-16 px-6">
+  <div class="max-w-6xl mx-auto text-center">
+    <!-- Section Title -->
+    <h2 class="text-3xl sm:text-4xl font-bold mb-6 text-sky-400">What We Offer</h2>
+    <p class="text-lg text-gray-300 mb-12">
+      We craft modern websites and digital experiences that help businesses grow online.  
+      From strategy to execution, our services are designed to deliver real impact.
+    </p>
+
+    <!-- Features Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-sky-500/10 p-6 rounded-2xl border border-sky-500/30 hover:bg-sky-500/20 transition">
+        <h3 class="font-semibold text-xl text-sky-300 mb-2">Innovative Ideas</h3>
+        <p class="text-gray-400 text-sm">Creative solutions tailored to your brand identity.</p>
+      </div>
+      <div class="bg-sky-500/10 p-6 rounded-2xl border border-sky-500/30 hover:bg-sky-500/20 transition">
+        <h3 class="font-semibold text-xl text-sky-300 mb-2">Trusted Expertise</h3>
+        <p class="text-gray-400 text-sm">Years of experience building reliable websites.</p>
+      </div>
+      <div class="bg-sky-500/10 p-6 rounded-2xl border border-sky-500/30 hover:bg-sky-500/20 transition">
+        <h3 class="font-semibold text-xl text-sky-300 mb-2">Modern Design</h3>
+        <p class="text-gray-400 text-sm">Clean, user-friendly designs that engage visitors.</p>
+      </div>
+      <div class="bg-sky-500/10 p-6 rounded-2xl border border-sky-500/30 hover:bg-sky-500/20 transition">
+        <h3 class="font-semibold text-xl text-sky-300 mb-2">On-Time Delivery</h3>
+        <p class="text-gray-400 text-sm">Projects delivered fast without compromising quality.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-[#0d1117] py-20 px-6">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+    
+    <!-- Left Image -->
+    <div class="flex justify-center">
+      <img src="images/people.jpg" alt="Services" class="rounded-2xl shadow-lg w-full max-w-md">
+    </div>
+    
+    <!-- Right Accordion -->
+    <div class="text-left">
+      <h2 class="text-3xl sm:text-4xl font-bold text-[#60a5fa] mb-8 text-center md:text-left">
+        Our Services
+      </h2>
+
+      <div class="space-y-4">
+        
+        <!-- Service 1 -->
+        <div class="bg-[#111827] rounded-2xl shadow-md overflow-hidden">
+          <button onclick="toggleDrawer(1)" class="w-full flex justify-between items-center px-6 py-4 text-white font-semibold text-lg">
+            Website Development
+            <span id="arrow-1" class="transition-transform">➤</span>
+          </button>
+          <div id="drawer-1" class="max-h-0 overflow-hidden transition-all duration-500 px-6">
+            <p class="text-gray-400 py-3">We build responsive, professional, and scalable websites that drive growth.</p>
+            <ul class="grid sm:grid-cols-2 gap-x-6 gap-y-2 text-gray-300 pb-4">
+              <li>✅ Custom Website Design</li>
+              <li>✅ E-Commerce Solutions</li>
+              <li>✅ Maintenance & Support</li>
+              <li>✅ Performance Optimization</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="bg-[#111827] rounded-2xl shadow-md overflow-hidden">
+          <button onclick="toggleDrawer(2)" class="w-full flex justify-between items-center px-6 py-4 text-white font-semibold text-lg">
+            Running Ads
+            <span id="arrow-2" class="transition-transform">➤</span>
+          </button>
+          <div id="drawer-2" class="max-h-0 overflow-hidden transition-all duration-500 px-6">
+            <p class="text-gray-400 py-3">We manage high-converting ad campaigns that maximize ROI.</p>
+            <ul class="grid sm:grid-cols-2 gap-x-6 gap-y-2 text-gray-300 pb-4">
+              <li>✅ Google Search & Display Ads</li>
+              <li>✅ Meta Ads (Facebook & Instagram)</li>
+              <li>✅ Retargeting Campaigns</li>
+              <li>✅ Ad Performance Tracking</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="bg-[#111827] rounded-2xl shadow-md overflow-hidden">
+          <button onclick="toggleDrawer(3)" class="w-full flex justify-between items-center px-6 py-4 text-white font-semibold text-lg">
+            Digital Marketing
+            <span id="arrow-3" class="transition-transform">➤</span>
+          </button>
+          <div id="drawer-3" class="max-h-0 overflow-hidden transition-all duration-500 px-6">
+            <p class="text-gray-400 py-3">Grow your online presence with SEO, content, and social media strategies.</p>
+            <ul class="grid sm:grid-cols-2 gap-x-6 gap-y-2 text-gray-300 pb-4">
+              <li>✅ Search Engine Optimization (SEO)</li>
+              <li>✅ Social Media Marketing</li>
+              <li>✅ Email Marketing Campaigns</li>
+              <li>✅ Content Strategy</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="bg-[#111827] rounded-2xl shadow-md overflow-hidden">
+          <button onclick="toggleDrawer(4)" class="w-full flex justify-between items-center px-6 py-4 text-white font-semibold text-lg">
+            Data Analytics
+            <span id="arrow-4" class="transition-transform">➤</span>
+          </button>
+          <div id="drawer-4" class="max-h-0 overflow-hidden transition-all duration-500 px-6">
+            <p class="text-gray-400 py-3">Turn data into actionable insights with advanced reporting & dashboards.</p>
+            <ul class="grid sm:grid-cols-2 gap-x-6 gap-y-2 text-gray-300 pb-4">
+              <li>✅ Business Intelligence Dashboards</li>
+              <li>✅ Sales & Marketing Analytics</li>
+              <li>✅ Data Cleaning & Reporting</li>
+              <li>✅ Growth Forecasting</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+function toggleDrawer(id) {
+  const drawer = document.getElementById("drawer-" + id);
+  const arrow = document.getElementById("arrow-" + id);
+  
+  if (drawer.classList.contains("max-h-0")) {
+    document.querySelectorAll('[id^="drawer-"]').forEach(el => {
+      el.classList.add("max-h-0");
+      el.classList.remove("max-h-[500px]");
+    });
+    document.querySelectorAll('[id^="arrow-"]').forEach(el => el.style.transform = "rotate(0deg)");
+
+    drawer.classList.remove("max-h-0");
+    drawer.classList.add("max-h-[500px]");
+    arrow.style.transform = "rotate(90deg)";
+  } else {
+    drawer.classList.add("max-h-0");
+    drawer.classList.remove("max-h-[500px]");
+    arrow.style.transform = "rotate(0deg)";
+  }
+}
+</script>
+<section class="bg-gradient-to-b from-[#0d1117] to-[#111827] py-20 px-6">
+  <div class="max-w-7xl mx-auto text-center">
+    <!-- Section Title -->
+    <h2 class="text-4xl sm:text-5xl font-bold text-white mb-6">
+      My Portfolio
+    </h2>
+    <p class="text-gray-400 max-w-2xl mx-auto mb-12">
+      A showcase of some amazing projects I have designed and developed.
+    </p>
+
+    <!-- Portfolio Grid -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Project Card -->
+      <a href="http://kokoon.in/" target="_blank" 
+         class="group relative bg-[#1e293b] rounded-2xl overflow-hidden shadow-lg transform hover:-translate-y-2 hover:shadow-2xl transition-all duration-500">
+        <img src="images/kokoon.png" 
+             alt="Kokoon" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500">
+        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <span class="text-white text-lg font-semibold">View Site</span>
+        </div>
+        <div class="p-5 text-left">
+          <h3 class="text-xl font-semibold text-white">Kokoon</h3>
+          <p class="text-gray-400 text-sm mt-2">E-commerce website built on Shopify for lifestyle products.</p>
+        </div>
+      </a>
+
+      <!-- Project Card -->
+      <a href="https://akshaynestproperties.com/" target="_blank" 
+         class="group relative bg-[#1e293b] rounded-2xl overflow-hidden shadow-lg transform hover:-translate-y-2 hover:shadow-2xl transition-all duration-500">
+        <img src="images/akshaynestproperties.png" 
+             alt="Akshay Nest Properties" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500">
+        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <span class="text-white text-lg font-semibold">View Site</span>
+        </div>
+        <div class="p-5 text-left">
+          <h3 class="text-xl font-semibold text-white">Akshay Nest Properties</h3>
+          <p class="text-gray-400 text-sm mt-2">Real estate website built with modern UI and SEO-friendly design.</p>
+        </div>
+      </a>
+
+      <!-- Project Card -->
+      <a href="https://www.ayodhyabooks.com/" target="_blank" 
+         class="group relative bg-[#1e293b] rounded-2xl overflow-hidden shadow-lg transform hover:-translate-y-2 hover:shadow-2xl transition-all duration-500">
+        <img src="images/Ayodhyabooks.png" 
+             alt="Ayodhya Books" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500">
+        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <span class="text-white text-lg font-semibold">View Site</span>
+        </div>
+        <div class="p-5 text-left">
+          <h3 class="text-xl font-semibold text-white">Ayodhya Books</h3>
+          <p class="text-gray-400 text-sm mt-2">Bookstore built on Shopify with custom features & student solutions.</p>
+        </div>
+      </a>
+
+      <!-- Project Card -->
+      <a href="https://ayodhyachamps.com/" target="_blank" 
+         class="group relative bg-[#1e293b] rounded-2xl overflow-hidden shadow-lg transform hover:-translate-y-2 hover:shadow-2xl transition-all duration-500">
+        <img src="images/ayodhyachamps.png" 
+             alt="Ayodhya Champs" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500">
+        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <span class="text-white text-lg font-semibold">View Site</span>
+        </div>
+        <div class="p-5 text-left">
+          <h3 class="text-xl font-semibold text-white">Ayodhya Champs</h3>
+          <p class="text-gray-400 text-sm mt-2">Educational platform for students, designed with WordPress.</p>
+        </div>
+      </a>
+
+      <!-- Project Card -->
+      <a href="https://lokashankara.com/" target="_blank" 
+         class="group relative bg-[#1e293b] rounded-2xl overflow-hidden shadow-lg transform hover:-translate-y-2 hover:shadow-2xl transition-all duration-500">
+        <img src="images/lokashakara.png" 
+             alt="Lokashankara" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500">
+        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <span class="text-white text-lg font-semibold">View Site</span>
+        </div>
+        <div class="p-5 text-left">
+          <h3 class="text-xl font-semibold text-white">Lokashankara</h3>
+          <p class="text-gray-400 text-sm mt-2">Community platform with event details and local activities.</p>
+        </div>
+      </a>
+
+      <!-- Project Card -->
+      <a href="https://ayodhyafoundation.in/" target="_blank" 
+         class="group relative bg-[#1e293b] rounded-2xl overflow-hidden shadow-lg transform hover:-translate-y-2 hover:shadow-2xl transition-all duration-500">
+        <img src="images/Ayodhyafoundation.png" 
+             alt="Ayodhya Foundation" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500">
+        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <span class="text-white text-lg font-semibold">View Site</span>
+        </div>
+        <div class="p-5 text-left">
+          <h3 class="text-xl font-semibold text-white">Ayodhya Foundation</h3>
+          <p class="text-gray-400 text-sm mt-2">Non-profit foundation site built with WordPress & WP Bakery.</p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+<footer class="bg-black text-white py-12">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 lg:grid-cols-3 gap-12 border-b border-gray-800 pb-10">
+
+    <!-- Branding -->
+    <div>
+      <img src="images/logo.png" alt="Logo" class="h-10 mb-4">
+      <h2 class="text-3xl font-bold mb-4">Get Ready to <br> Grow Your Business</h2>
+      <div class="flex flex-col sm:flex-row gap-4 mt-6">
+        <a href="mailto:it.pixelrise@gmail.com"
+           class="px-6 py-3 border border-blue-500 rounded-full hover:bg-blue-600 transition">
+          it.pixelrise@gmail.com
+        </a>
+        <a href="tel:+919739845943"
+           class="px-6 py-3 border border-blue-500 rounded-full hover:bg-blue-600 transition">
+          +91 9739845943
+        </a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+      <ul class="space-y-3">
+        <li><a href="index.html" class="hover:text-blue-400">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-400">About Us</a></li>
+        <li><a href="#service" class="hover:text-blue-400">Services</a></li>
+        <li><a href="#contact" class="hover:text-blue-400">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div>
+      <h3 class="text-xl font-semibold mb-4">Services</h3>
+      <ul class="space-y-3">
+        <li><a href="#" class="hover:text-blue-400">Website Development</a></li>
+        <li><a href="#" class="hover:text-blue-400">App Development</a></li>
+        <li><a href="#" class="hover:text-blue-400">Website Maintenance</a></li>
+        <li><a href="#" class="hover:text-blue-400">Digital Marketing</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center mt-6 text-sm text-gray-400">
+    <p>© 2025 YourCompany. All Rights Reserved.</p>
+    <div class="flex gap-6 mt-3 sm:mt-0">
+      <a href="privacy.html" class="hover:text-blue-400">Privacy Policy</a>
+      <a href="terms.html" class="hover:text-blue-400">Terms & Conditions</a>
+      
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body>
+</html>
